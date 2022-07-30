@@ -50,11 +50,15 @@
     <div class="col-8">
       <router-view></router-view>
     </div>
+    <div class="">
+
+    </div>
   </div>
 </template>
 
 <script setup>
 import { reactive } from 'vue'
+
 const menu = reactive([
   {
     title: '文物和传感器管理',

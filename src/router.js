@@ -29,6 +29,7 @@ const routes = [
       {path: 'alarm-disease',     component: MainPageAlarmDisease},
       {path: 'alarm-environment', component: MainPageAlarmEnvironment},
       {path: 'system-manager',    component: MainPageSystemManager},
+    
     ]
   },
 
