@@ -12,7 +12,7 @@ const MainPageAlarmDisease     = () => import('./pages/Main/AlarmDisease.vue')
 const MainPageAlarmEnvironment = () => import('./pages/Main/AlarmEnvironment.vue')
 
 const MainPageSystemManager = () => import('./pages/Main/SystemManager.vue')
-
+const MainPageAlertBinding = () => import('./pages/Main/AlertBinding.vue')
 const Home = { template: '<div>Home</div>' }
 
 const routes = [
@@ -29,7 +29,7 @@ const routes = [
       {path: 'alarm-disease',     component: MainPageAlarmDisease},
       {path: 'alarm-environment', component: MainPageAlarmEnvironment},
       {path: 'system-manager',    component: MainPageSystemManager},
-    
+      {path: 'alert-binding',     component: MainPageAlertBinding},
     ]
   },
 

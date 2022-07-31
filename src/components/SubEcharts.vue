@@ -15,15 +15,17 @@
     import { reactive } from 'vue'
     import { use } from 'echarts/core';
     import { LineChart } from 'echarts/charts';
-    import { GridComponent } from 'echarts/components';
+    import { GridComponent, TimelineComponent, TitleComponent } from 'echarts/components';
     import { UniversalTransition } from 'echarts/features';
     import { CanvasRenderer } from 'echarts/renderers';
     import VChart from 'vue-echarts';
+
     use([
     GridComponent,
     LineChart,
     CanvasRenderer,
-    UniversalTransition
+    UniversalTransition,
+    TitleComponent,
     ])
     
  

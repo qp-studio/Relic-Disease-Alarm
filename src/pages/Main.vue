@@ -1,4 +1,6 @@
 <template>
+<div class="col">
+  
   <div class="row">
     <div class="col-4">
 
@@ -49,11 +51,16 @@
     </div>
     <div class="col-8">
       <router-view></router-view>
+      
     </div>
-    <div class="">
-
-    </div>
+    
+   
   </div>
+  
+</div>
+  
+ 
+  
 </template>
 
 <script setup>

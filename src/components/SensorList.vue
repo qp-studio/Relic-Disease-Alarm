@@ -34,7 +34,7 @@
         <td>{{ item.code }}</td>
         <td>{{ item.sensor_id }}</td>
         <td class="d-flex flex-row">
-        <button type="button" class="btn btn-primary p-2">
+        <button type="button" class="btn btn-primary p-2" @click="checkdata">
           检查数据
         </button>
         <button type="button" class="btn btn-primary p-2">
@@ -47,7 +47,11 @@
 
 <script setup>
 import { reactive } from 'vue'
+import router from '../router.js'
 
+function checkdata(){
+  router.push('/main/data-relic')
+}
 const relic_list = reactive([
   {name: 'A', img: '', code: '001', sensor_id: '001'},
   {name: 'B', img: '', code: '002', sensor_id: '002'},

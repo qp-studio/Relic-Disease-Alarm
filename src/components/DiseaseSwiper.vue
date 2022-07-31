@@ -9,9 +9,9 @@
   </div>
   
   <!-- 轮播图片 -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fp7.itc.cn%2Fq_70%2Fimages03%2F20201113%2Fe13ac041fa8340c7aee29ea48bfcef3f.jpeg&refer=http%3A%2F%2Fp7.itc.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1661747492&t=1df7d0411a49e4f0f7f2f42940476448" class="d-block" style="width:100%" height="300px">
+  <div class="carousel-inner" @click="detail">
+    <div class="carousel-item active" >
+      <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fp7.itc.cn%2Fq_70%2Fimages03%2F20201113%2Fe13ac041fa8340c7aee29ea48bfcef3f.jpeg&refer=http%3A%2F%2Fp7.itc.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1661747492&t=1df7d0411a49e4f0f7f2f42940476448" class="d-block" style="width:100%" height="300px" >
     </div>
     <div class="carousel-item">
       <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fboot-img.xuexi.cn%2Fcontribute_img%2F20211210084836%2F45473510987807319.jpg&refer=http%3A%2F%2Fboot-img.xuexi.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1661747495&t=ad781a26a96bc9d8ea11122bf69f5909" class="d-block" style="width:100%" height="300px">
@@ -32,6 +32,11 @@
 </template>
 <script setup>
 
+import router from '../router.js'
+
+function detail(){
+  router.push('/main/data-monitor')
+}
 </script>
 <style scoped>
 

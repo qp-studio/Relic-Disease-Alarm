@@ -26,7 +26,7 @@
 import router from '../router.js'
 
 function login() {
-  router.push('/main')
+  router.push('/main/alert-binding')
 }
 
 </script>
