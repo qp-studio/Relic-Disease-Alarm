@@ -15,13 +15,26 @@
         <td>{{ relic.code }}</td>
         <td>{{ relic.sensor_id }}</td>
       </tr>
+      
     </tbody>
+   
   </table>
+    <div >
+      <disease-swiper></disease-swiper>
+    </div>
+    
+    <sub-echarts ></sub-echarts>
+    
+   
 
 </template>
 
 <script setup>
+
+import SubEcharts from '../components/SubEcharts.vue'
+import DiseaseSwiper from '../components/DiseaseSwiper.vue'
 import { reactive } from 'vue'
+
 
 const relic = reactive({
   name: 'C',

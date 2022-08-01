@@ -31,6 +31,7 @@
   <button
     type="button"
     class="btn btn-primary"
+    @click="confirm"
   >
     确认绑定
   </button>
@@ -38,7 +39,12 @@
 
 <script setup>
 import { reactive } from 'vue'
+import router from '../router.js'
 
+function confirm(){
+  alert("绑定成功")
+  router.push('/main/senser-list')
+}
 const relic_list = reactive([
   {name: 'A', img: '', code: '001'},
   {name: 'B', img: '', code: '002'},

@@ -1,4 +1,6 @@
 <template>
+<div class="col">
+  
   <div class="row">
     <div class="col-4">
 
@@ -49,12 +51,21 @@
     </div>
     <div class="col-8">
       <router-view></router-view>
+      
     </div>
+    
+   
   </div>
+  
+</div>
+  
+ 
+  
 </template>
 
 <script setup>
 import { reactive } from 'vue'
+
 const menu = reactive([
   {
     title: '文物和传感器管理',
